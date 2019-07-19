@@ -1,0 +1,104 @@
+<html>
+<head> 
+
+    
+        <script src= jquery.js></script>
+          <script>   
+            $(document).ready(function(){
+            $('#h1').hide();
+            $('#h2').hide();
+            $('#h3').hide();
+            $('#h4').hide();
+
+           $('#deep1').hide();
+
+            });
+         </script>
+<div class ="deepak"  id = "deep1" > <img src = "A.png">   </div>
+        <link rel = "stylesheet"  type = "text/css"  href = "page1.css" /> 
+</head>
+       <body  background="sky.png">
+          <div class="div11" id="h1"> A</div>
+          <div class="div12" id="h2">B </div>
+          <div class="div13" id="h3">C </div>
+          <div class="div14" id="h4">D </div>
+
+        
+
+      </body>
+
+          <div class="base1" id="base1"> A</div>
+          <div class="base2" id="base2"> B</div>
+          <div class="base3" id="base3"> C</div>
+          <div class="base4" id="base4"> D</div>
+                <!-- <button type = "button" id="button1" class = "button1">A</button> 
+                <button type = "button" id="button2" class = "button2">B</button>
+                <button type = "button" id="button3" class = "button3">C</button> 
+                <button type = "button" id="button4" class = "button4">D</button>      -->   
+ 
+        <script>
+                $(document).ready(function(){
+                    $("#base1").click(function(){
+                        var obj = document.createElement("audio");
+                         obj.src = "sound/A.mp3";
+                         obj.volume = 1;
+                         obj.autoPlay = false;
+                         obj.preLoad = true;
+                         obj.controls = true;
+                         obj.play();
+                       // obj.pause();
+                    $("#base1").fadeOut("slow",function(){
+                    $("#h1").show('fast');
+                    $("#deep1").show('fast');
+                    });
+                });
+
+
+                $("#base2").click(function(){
+                    var obj = document.createElement("audio");
+                         obj.src = "sound/B.mp3";
+                         obj.volume = 1;
+                         obj.autoPlay = false;
+                         obj.preLoad = true;
+                         obj.controls = true;
+                         obj.play();
+                       // obj.pause();
+                     $("#base2").fadeOut("slow",function(){
+                    $("#h2").show('fast');
+                    });
+                });
+
+
+                $("#base3").click(function(){
+                    var obj = document.createElement("audio");
+                         obj.src = "sound/C.mp3";
+                         obj.volume = 1;
+                         obj.autoPlay = false;
+                         obj.preLoad = true;
+                         obj.controls = true;
+                         obj.play();
+                       // obj.pause();
+                       $("#base3").fadeOut("slow",function(){
+                    $("#h3").show('fast');
+                    });
+                });
+
+                
+                $("#base4").click(function(){
+                    var obj = document.createElement("audio");
+                         obj.src = "sound/B.mp3";
+                         obj.volume = 1;
+                         obj.autoPlay = false;
+                         obj.preLoad = true;
+                         obj.controls = true;
+                         obj.play();
+                       // obj.pause();
+                       $("#base4").fadeOut("slow",function(){
+                    $("#h4").show('fast');
+                    });
+                });
+
+                });
+     </script>  
+</body>
+</html>
