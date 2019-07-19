@@ -1,0 +1,44 @@
+<html>
+    <body sth="ee">
+        <div>
+            <img src="C:\Users\pc\Desktop\Assignments\CarSpark\BB.jpg" alt="Notebook" style="width:100%;" id=1>
+        </div>
+                <div>
+<!--            <img src="C:\Users\pc\Desktop\Assignments\CarSpark\BB.jpg" alt="Notebook" style="width:100%;" id=2> -->
+        </div>
+        <script>
+            
+         //   console.log(document.div.getAttribute('sth'));
+            
+            var Alphabets = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+            var Options=[];
+            
+            
+         //   document.getElementById("").innerHTML="<img src='images/alphabets[i]'/>"
+            
+            function getRandomArbitrary(min, max) 
+            {
+                var Random = Math.floor(Math.random() * (max - min) + min);
+               return Random;
+            }
+            
+            function GrabOptions()
+            {
+                for (var i=0;i<6;i++)
+                    {
+                        Options[i]=Alphabets[getRandomArbitrary(0,26)];
+                    }
+                while(i--)
+                    console.log(Options[i]);
+            }
+            GrabOptions();
+            
+             function GrabQuestion()
+            
+            
+       
+        </script>
+        
+    <p>hi</p></body>
+    
+</html>
